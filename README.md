@@ -61,7 +61,7 @@ exports.config = {
     );
     jasmine.getEnv().addReporter(
       new HtmlReporter({
-        baseDirectory: "./ow_functional_testing_results",
+        baseDirectory: "./_functional_testing_results",
         // pathBuilder: function pathBuilder(
         //   spec,
         //   descriptions,
