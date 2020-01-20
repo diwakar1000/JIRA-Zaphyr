@@ -1,6 +1,7 @@
 # JIRA-Zaphyr
 JIRA Zapi Integration
 # Sample use with Protractor 
+```
 // Protractor configuration file, see link for more information
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 const log4js = require("log4js");
@@ -82,10 +83,8 @@ exports.config = {
             b.cachedBase = bTemp.slice(0).slice(0, -1);
             b.cachedName = bTemp.slice(0).join("");
           }
-
           var firstBase = a.cachedBase;
           var secondBase = b.cachedBase;
-
           for (var i = 0; i < firstBase.length || i < secondBase.length; i++) {
             if (firstBase[i] === undefined) {
               return -1;
@@ -98,7 +97,6 @@ exports.config = {
             }
             return firstBase[i].localeCompare(secondBase[i]);
           }
-
           var firstTimestamp = a.timestamp;
           var secondTimestamp = b.timestamp;
 
@@ -113,7 +111,6 @@ exports.config = {
         }
       }).getJasmine2Reporter()
     );
-
     const options = {
       disabled: false,
       screenshot: "fail",
@@ -133,3 +130,4 @@ exports.config = {
     return onCompleteDefer.promise;
   }
 };
+```
