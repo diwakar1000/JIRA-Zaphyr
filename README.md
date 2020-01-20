@@ -104,7 +104,7 @@ exports.config = {
           else return 1;
         },
         excludeSkippedSpecs: true,
-        docTitle: "OW Functional Testing Reports",
+        docTitle: "Functional Testing Reports",
         clientDefaults: {
           showTotalDurationIn: "header",
           totalDurationFormat: "hms"
@@ -114,8 +114,8 @@ exports.config = {
     const options = {
       disabled: false,
       screenshot: "fail",
-      projectId: "10024",
-      boardId: "44"
+      projectId: {projectID},
+      boardId: {boardId}
     };
 
     //add the reporter
