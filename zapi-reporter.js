@@ -45,11 +45,11 @@ const ZapiReporter = (onPrepareDefer, onCompleteDefer, browser) => {
     this.suiteStarted = require('./zapi-reporter-functions/suite-started').bind(this);
 
 
-    require('./zapi-reporter-functions/init').bind(this)();
+    require('./init').bind(this)();
 
-    this.specStarted = require('./zapi-reporter-functions/spec-started').bind(this);
-    this.specDone = require('./zapi-reporter-functions/spec-done').bind(this);
-    this.suiteDone = require('./zapi-reporter-functions/suite-done').bind(this);
+    this.specStarted = require('./spec-started').bind(this);
+    this.specDone = require('./spec-done').bind(this);
+    this.suiteDone = require('./suite-done').bind(this);
 
     return this
 
